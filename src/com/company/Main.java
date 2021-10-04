@@ -9,7 +9,9 @@ public class Main {
     //  we need user input i.e. scanner
     // Use If/Else conditionals
     public static void main(String[] args) {
-        // write your code here Hello people!
+       // write your code here Hello people!
+/*
+        slide 42
         Scanner input = new Scanner(System.in);
         int tax = 0;
         System.out.println("Please enter your filing status, either: 1.Single, 2.Married jointly, 3.Married separate, 4.Head of Household: ");
@@ -104,6 +106,137 @@ public class Main {
                 System.out.println("The tax rate is " + tax + "%");
             }
         }
+
+         //slide 39
+        // Calculate Body Mask Index
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter your weight in kilograms:");
+        float weight = input.nextFloat();
+        System.out.println("Please enter your height in centimeters:");
+        float height = input.nextFloat();
+
+        float bmi = weight \ (height * height);
+
+        if (bmi < 18.5) {
+            System.out.println("Underweight");
+        } else if (bmi >= 18.5 && bmi < 25.0) {
+            System.out.println("Normal");
+        } else if (bmi >=25.0 && bmi < 30.0){
+            System.out.println("Overweight");
+        } else {
+            System.out.println("Obese");
+        }
+
+
+             Scanner input = new Scanner(System.in);
+//        System.out.println("Please enter your weight in kilograms:");
+//        float weight = input.nextFloat();
+//        System.out.println("Please enter your height in Meters:");
+//        float height = input.nextFloat();
+//        float squareHeight = (height * height);
+//        float bmi = weight / squareHeight;
+//        System.out.println(bmi);
+//        if (bmi < 18.5) {
+//            System.out.println("Underweight");
+//        } else if (bmi >= 18.5 && bmi < 25.0) {
+//            System.out.println("Normal");
+//        } else if (bmi >=25.0 && bmi < 30.0){
+//            System.out.println("Overweight");
+//        } else {
+//            System.out.println("Obese");
+//        }
+//        Scanner input = new Scanner(System.in);
+//        double userWeight;
+//        double userHeight;
+//        double sqrHeight;
+//        double bmi;
+//
+//        System.out.println("Enter your height in meters: ");
+//        userHeight = input.nextDouble();
+//        System.out.println("Enter your weight in kilograms: ");
+//        userWeight = input.nextDouble();
+//        sqrHeight = (userHeight * userHeight);
+//        bmi = userWeight / sqrHeight;
+//        System.out.printf("Your BMI is %.2f :", bmi);
+
+
+
+
+
+
+
+        Slide 56
+        Write a program that prompts the user to enter a year
+        and displays the animal for the year.
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter a year:");
+        int year = input.nextInt();
+        switch(year) {
+            case 0:
+                System.out.println("monkey");
+                break;
+            case 1:
+                System.out.println("rooster");
+                break;
+            case 2:
+                System.out.println("dog");
+                break;
+            case 3:
+                System.out.println("pig");
+                break;
+            case 4:
+                System.out.println("rat");
+                break;
+            case 5:
+                System.out.println("ox");
+                break;
+            case 6:
+                System.out.println("tiger");
+                break;
+            case 7:
+                System.out.println("rabbit");
+                break;
+            case 8:
+                System.out.println("dragon");
+                break;
+            case 9:
+                System.out.println("snake");
+                break;
+            case 10:
+                System.out.println("horse");
+                break;
+            case 11:
+                System.out.println("sheep");
+                break;
+        }
+        System.out.println();
+
+
+        Slide 21
+
+        Write a program that randomly generates a lottery of a two-digit number,
+                prompts the user to enter a two-digit number, and determines whether the user wins
+        according to the following rule:
+        If the user input matches the lottery exactly, the award is $5,000.
+        If the user input matches both digits but in the wrong order, the award is $1,000.
+        If either digit of the user input matches any digit of the lottery, the award is $250.
+                Otherwise the award is $0.
+
+*/
+
+
+        double random = (0 + Math.random()* 50).Math.round();
+        int newNumber = (int)random;
+        System.out.println(random);
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter the two digit number: ");
+        int number =  input.nextInt();
+            if (newNumber == number) {
+            System.out.println("You got the award of 5000");
+            else if (newNumber ==  )
+            System.out.println("");
+
     }
 }
 
